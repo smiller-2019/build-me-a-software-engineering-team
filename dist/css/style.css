@@ -1,4 +1,11 @@
 
+  .custom-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
   .header-main {
     background: red;
     color: #fff;

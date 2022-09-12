@@ -16,6 +16,7 @@ function createHTMLWebpage(managers, engineers, interns) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Build me a software engineer team</title>
 </head>
@@ -25,7 +26,7 @@ function createHTMLWebpage(managers, engineers, interns) {
 <h1>My Team</h1>
 </div>
 </header>
-<div class="d-flex justify-content-center flex-wrap">
+<div class="custom-flex">
 `;
 
   // format the manager details for each manager for the html file
@@ -33,8 +34,8 @@ function createHTMLWebpage(managers, engineers, interns) {
   managers.forEach((manager) => {
     addCard = `<div class="card bg-light" style="width: 18rem;">
   <div class="card-header bg-primary text-white">
-  <h2 class="card-title">${manager.getName()}</h2>
-  <h2 class="card-subtitle mb-2 ">${manager.getGithubRole()}</h2>
+  <h2 class="card-title"> ${manager.getName()}</h2>
+  <h2 class="card-subtitle mb-2 "><i class="bi bi-cup-hot"></i> ${manager.getGithubRole()}</h2>
   </div>
   <div class="card-body p-4">    
   <ul class="list-group list-group-flush border">
@@ -52,8 +53,8 @@ function createHTMLWebpage(managers, engineers, interns) {
   engineers.forEach((engineer) => {
     addCard = `<div class="card bg-light" style="width: 18rem;">
     <div class="card-header bg-primary text-white">
-    <h2 class="card-title">${engineer.getName()}</h2>
-    <h2 class="card-subtitle mb-2 ">${engineer.getGithubRole()}</h2>
+    <h2 class="card-title"> ${engineer.getName()}</h2>
+    <h2 class="card-subtitle mb-2 "><i class="bi bi-eyeglasses"></i> ${engineer.getGithubRole()}</h2>
     </div>
     <div class="card-body p-4">    
     <ul class="list-group list-group-flush border">
@@ -73,7 +74,7 @@ function createHTMLWebpage(managers, engineers, interns) {
     addCard = `<div class="card bg-light" style="width: 18rem;">
     <div class="card-header bg-primary text-white">
     <h2 class="card-title">${intern.getName()}</h2>
-    <h2 class="card-subtitle mb-2 ">${intern.getGithubRole()}</h2>
+    <h2 class="card-subtitle mb-2 "><i class="bi bi-person"></i> ${intern.getGithubRole()}</h2>
     </div>
     <div class="card-body p-4">    
     <ul class="list-group list-group-flush border">
@@ -104,6 +105,13 @@ function createHTMLWebpage(managers, engineers, interns) {
 // format the css file and create the file
 function createCSS() {
   generateCSS = `
+  .custom-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
   .header-main {
     background: red;
     color: #fff;

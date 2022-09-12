@@ -2,5 +2,26 @@
   "dependencies": {
     "inquirer": "^8.2.4",
     "jest": "^29.0.3"
-  }
+  },
+  "name": "build-me-a-software-engineering-team",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smiller-2019/build-me-a-software-engineering-team.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smiller-2019/build-me-a-software-engineering-team/issues"
+  },
+  "homepage": "https://github.com/smiller-2019/build-me-a-software-engineering-team#readme"
 }
