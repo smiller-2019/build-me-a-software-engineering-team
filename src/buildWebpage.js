@@ -41,7 +41,7 @@ function createHTMLWebpage(managers, engineers, interns) {
   <ul class="list-group list-group-flush border">
   <li class="list-group-item">ID:${manager.getID()}</li>
   <li class="list-group-item"> Email: <a href="#" class="card-link">${manager.getEmail()}</a></li>
-  <li class="list-group-item">GitHub: <a href="#" class="card-link">${manager.getGithubOfficeNumber()}</a></li>
+  <li class="list-group-item">Office Number: <a href="#" class="card-link">${manager.getGithubOfficeNumber()}</a></li>
 </ul>
 </div>
 </div>`;
@@ -80,7 +80,7 @@ function createHTMLWebpage(managers, engineers, interns) {
     <ul class="list-group list-group-flush border">
     <li class="list-group-item">ID:${intern.getID()}</li>
     <li class="list-group-item"> Email: <a href="#" class="card-link">${intern.getEmail()}</a></li>
-    <li class="list-group-item">GitHub: <a href="#" class="card-link">${intern.getSchoolName()}</a></li>
+    <li class="list-group-item">School: <a href="#" class="card-link">${intern.getSchoolName()}</a></li>
   </ul>
   </div>
   </div>`;
